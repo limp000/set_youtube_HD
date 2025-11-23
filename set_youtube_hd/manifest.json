@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube 화질 자동 조정",
+  "version": "1.0.1",
+  "description": "유튜브 동영상 화질을 자동으로 1440p60 → 1080p → 720p 순으로 설정합니다",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
